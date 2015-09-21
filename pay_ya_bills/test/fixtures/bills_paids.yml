@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill_name: MyString
+  amount_paid: 1
+  date_paid: MyString
+  bill_paid_id: 1
+
+two:
+  bill_name: MyString
+  amount_paid: 1
+  date_paid: MyString
+  bill_paid_id: 1

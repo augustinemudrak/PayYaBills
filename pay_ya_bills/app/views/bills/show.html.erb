@@ -1,0 +1,14 @@
+	<div class="show bill columns large-4 medium-6 small-12">
+	<h1><%= @bill.bill_name %></h1><br>
+	Minimum Payment:  $<%= @bill.min_pay %><br>
+	<a href='<%= @bill.link %>'> Pay Bill Now</a><br>
+	Payment Due Date: <%= @bill.payment_date %><br>
+	<%= form_for(@bill) do |f| %>
+	<%= hidden_field(:bill, :paid, :value => true) %>
+	<%= f.submit "Pay Bill", class: 'button'%>
+    <% end %>
+	<a><%= link_to 'edit', edit_bill_path(@bill) %></a>                 
+	<%= link_to 'delete', bill_path(@bill), { 
+	method: :delete} %>	
+	</div>
+

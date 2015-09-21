@@ -1,0 +1,15 @@
+	<div class="row">
+	<% @bills.each do |bills| %>
+
+	<div class="bill columns large-4 medium-6 small-12">
+	<h3><%= bills.bill_name %> </h3>
+	Minimum Payment: $<%= bills.min_pay %><br>
+	Time Paid: <%= bills.updated_at %>
+
+	</div>
+	<% end %>
+	</div>
+
+	<div class="closing row small-12 large-12 medium-12">
+	<a href="http://localhost:3000/" class="button round">Unpaid Bills</a>
+	</div>

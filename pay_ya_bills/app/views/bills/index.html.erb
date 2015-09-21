@@ -1,0 +1,16 @@
+
+	<div class="row">
+	<% @bills.each do |bills| %>
+
+	<div class="bill columns large-4 medium-6 small-12">
+	<%= link_to bills.bill_name, bill_path(bills) %><br>
+	Pay Date:   <%= bills.payment_date %><br>
+	 Minimum Payment:   $<%= bills.min_pay %><br>
+	 <a href='<%= bills.link %>'> Pay Bill</a>
+	</div>
+	<% end %>
+	</div>
+
+	<div class="closing row small-12 large-12 medium-12">
+		<a href="http://localhost:3000/paid_bills" class="button round">Paid History</a>
+	</div>

@@ -1,0 +1,11 @@
+<%= form_for(@bill) do |f| %>
+    <%= f.label :bill_name %>
+    <%= f.text_field :bill_name %>
+    <%= f.label :payment_date %>
+    <%= f.text_field :payment_date %>
+    <%= f.label :min_pay %>
+    <%= f.text_field :min_pay %>
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+    <%= f.submit %>
+    <% end %>

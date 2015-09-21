@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+<div class="row page-header">
+  <div class="columns text-center">
+    <img class="header" src="http://i.imgur.com/dfD5e8l.png">
+  </div>
+  <a href="http://localhost:3000/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" class="button radius" target="_blank">Add A Bill</a>
+</div>
+    <%= yield %>
+
+  </body>
+</html>

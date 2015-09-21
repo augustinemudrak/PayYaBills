@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  min_pay: 1
+  bill_name: MyString
+  link: MyString
+  payment_data: MyString
+  bill_id: 1
+  paid: false
+
+two:
+  min_pay: 1
+  bill_name: MyString
+  link: MyString
+  payment_data: MyString
+  bill_id: 1
+  paid: false
