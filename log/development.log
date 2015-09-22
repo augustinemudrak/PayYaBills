@@ -1,0 +1,306 @@
+
+
+Started GET "/" for ::1 at 2015-09-21 19:21:22 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.2ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (103.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (202.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 19:21:23 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.5ms)
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.3ms)[0m  select sqlite_version(*)
+  [1m[36m (6.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBills (20150916211116)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "payment_data" varchar, "bill_id" integer, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150916211116"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreatePaidBills (20150916215723)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "paid_bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bill_name" varchar, "amount_paid" integer, "date_paid" varchar, "bill_paid_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150916215723"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to DropPaid (20150919195735)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (10.6ms)[0m  DROP TABLE "paid_bills"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150919195735"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to AddPaidAtToBills (20150919220919)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.9ms)[0m  ALTER TABLE "bills" ADD "paid_at" datetime
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150919220919"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Migrating to DropPaymentData (20150919221129)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  DROP TABLE "payment_data"
+SQLite3::SQLException: no such table: payment_data: DROP TABLE "payment_data"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemovePaymentDataFromBills (20150919221521)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "abills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "payment_data" varchar, "bill_id" integer, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bills"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "bills"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "bill_id" integer, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "abills"[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "abills"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150919221521"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to RemoveBillIdFromBills (20150919221633)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "abills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "bill_id" integer, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "bills"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "bills"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "abills"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "abills"[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150919221633"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddPaymentDateToBills (20150920221728)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "bills" ADD "payment_date" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150920221728"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Migrating to ChangePaidFromBills (20150921184939)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "abills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "paid" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime, "payment_date" varchar) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "bills"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "bills"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "paid" boolean DEFAULT 'f', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime, "payment_date" varchar) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "abills"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "abills"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150921184939"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to RemovePaidFromBills (20150921185416)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "abills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "paid" boolean DEFAULT 'f', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime, "payment_date" varchar) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "bills"[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "bills"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "bills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "min_pay" integer, "bill_name" varchar, "link" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "paid_at" datetime, "payment_date" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "abills"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "abills"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150921185416"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddPaidToBills (20150921185520)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bills" ADD "paid" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150921185520"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-09-21 19:23:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (0.2ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 6646ms (Views: 6614.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/application.self-8d133098c471b84e746d1611d055e7ff23ede2a5a19d87a84ad7412be4c18aca.css?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-9bfce08483c0666536961c87ead592b404a362e3a2ff723749f4e4fdefce1bbe.css?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/vendor/modernizr.self-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/style.self-035cbc64baab1122f29e1b527f3832b96ee0d681bc49eb89bfb4d43ceeb3185b.css?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.self-ee5396739ce46beb039f26ea629172a74143752d74f703c6c3b219fc52aecf73.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-f8b56c707a79139807305a5f7efc2aaa0848f0c677abcc056496f507e0192b79.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-d55abdcb0a7a29512be2f31f63d418cc8cc4505a0a3c71946d25484b0a0b3f4e.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-54610737b435a97590fcb176848c3c7a44c4d55d369894260fa7c28c97a70a23.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-fbde7afb61e8ffd8ab9b717f0bed1e58cb9e0144a25cc773fea634d5554f62cd.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-c9ee29909e266373e5e814a73fc6ea062245ddd29466d35d232448f73350d78a.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-dad8415355087cb21a16fa44bac20d602344d52de5aca9e588e3588fce5dd5a7.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-0a5271728699423f583dd5b3b8a11bfe0dc9fb5044446bcf3218ef8ca906a82d.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-7aa743bf4660deb2fb2f601c112806a1703c430067531da3f41e4afffe19fee9.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-f8d30eb1717c874db26723f9e07901ec0a325d59263f1404ee83a616bb597ad2.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-a50193f172f11e57b373c3001072ba2d6b34b857ab251e9ded30af5242855687.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-75bffd0c7f4f0d2992ab95f0cc6959282ebb5807da70123d40c01d76e230ec88.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-95f01feb3e25e47b58b78da0021ae2fffafdee70846682067c180e0e10f7b095.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-834156796c253580629cfffc720bdc3d191b1e5a5a6ddbc1102ecd08c876516c.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-105416f061562f07c6a0a8057d68282fdc1eeb5dc306713fcae6c9a53001fc55.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-8911a7352cb577b6b7973b0734d57d2b624c79286558ffa36fcac0c29b2d0bee.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-9bf6791513d1b20e213bb1aee3df0bc17128c7e18421258dc68a2a4ccabe1647.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/application.self-79a300d240bbf145c9af961805bc87f18e9f73bd1cda275895295c80d8552d3f.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-21 19:23:49 -0400
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-21 19:23:54 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 212ms (Views: 202.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-21 19:24:14 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Y3BnKXmYazuZFVWJyYHuDIct981s96sbJiLXd58vtxFaTIr5TFCxv6E3HtnRowxLgNijtaSnvwLqOPV0gzxwg==", "bill"=>{"bill_name"=>"Hookers", "payment_date"=>"When ever", "min_pay"=>"500", "link"=>"https://www.ashleymadison.com/?lang=en_US&c=1&utm_source=google&utm_medium=cpc&utm_term=ashley%20madison&utm_content=e&network=g&campaignid=99324244=&adgroupid=4171677844&targetid=kwd-136338240&utm_campaign=Ashley+Madison+-+US+-+Brand&gclid=CLjoserUhsgCFQyPHwodNjMPMA"}, "commit"=>"Create Bill"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["min_pay", 500], ["bill_name", "Hookers"], ["link", "https://www.ashleymadison.com/?lang=en_US&c=1&utm_source=google&utm_medium=cpc&utm_term=ashley%20madison&utm_content=e&network=g&campaignid=99324244=&adgroupid=4171677844&targetid=kwd-136338240&utm_campaign=Ashley+Madison+-+US+-+Brand&gclid=CLjoserUhsgCFQyPHwodNjMPMA"], ["payment_date", "When ever"], ["created_at", "2015-09-21 23:24:14.335263"], ["updated_at", "2015-09-21 23:24:14.335263"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 19:24:14 -0400
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (0.2ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.2ms)
