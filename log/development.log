@@ -304,3 +304,880 @@ Processing by BillsController#index as HTML
   [1m[35mBill Load (0.2ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
   Rendered bills/index.html.erb within layouts/application (1.4ms)
 Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 21:14:34 -0400
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.4) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (100.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (217.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 21:14:40 -0400
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.4) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 21:16:55 -0400
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.4) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.6ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (158.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 21:19:04 -0400
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.4) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.4) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.4) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.4) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.4) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.4) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/augustinemudrak/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-21 21:19:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (2.4ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 986ms (Views: 947.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/foundation_and_overrides.self-9bfce08483c0666536961c87ead592b404a362e3a2ff723749f4e4fdefce1bbe.css?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/style.self-035cbc64baab1122f29e1b527f3832b96ee0d681bc49eb89bfb4d43ceeb3185b.css?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/application.self-8d133098c471b84e746d1611d055e7ff23ede2a5a19d87a84ad7412be4c18aca.css?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/vendor/modernizr.self-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.self-ee5396739ce46beb039f26ea629172a74143752d74f703c6c3b219fc52aecf73.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-f8b56c707a79139807305a5f7efc2aaa0848f0c677abcc056496f507e0192b79.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-d55abdcb0a7a29512be2f31f63d418cc8cc4505a0a3c71946d25484b0a0b3f4e.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-fbde7afb61e8ffd8ab9b717f0bed1e58cb9e0144a25cc773fea634d5554f62cd.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-54610737b435a97590fcb176848c3c7a44c4d55d369894260fa7c28c97a70a23.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-7aa743bf4660deb2fb2f601c112806a1703c430067531da3f41e4afffe19fee9.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-c9ee29909e266373e5e814a73fc6ea062245ddd29466d35d232448f73350d78a.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-dad8415355087cb21a16fa44bac20d602344d52de5aca9e588e3588fce5dd5a7.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-a50193f172f11e57b373c3001072ba2d6b34b857ab251e9ded30af5242855687.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-75bffd0c7f4f0d2992ab95f0cc6959282ebb5807da70123d40c01d76e230ec88.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-0a5271728699423f583dd5b3b8a11bfe0dc9fb5044446bcf3218ef8ca906a82d.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-95f01feb3e25e47b58b78da0021ae2fffafdee70846682067c180e0e10f7b095.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-f8d30eb1717c874db26723f9e07901ec0a325d59263f1404ee83a616bb597ad2.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-834156796c253580629cfffc720bdc3d191b1e5a5a6ddbc1102ecd08c876516c.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-105416f061562f07c6a0a8057d68282fdc1eeb5dc306713fcae6c9a53001fc55.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-8911a7352cb577b6b7973b0734d57d2b624c79286558ffa36fcac0c29b2d0bee.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-9bf6791513d1b20e213bb1aee3df0bc17128c7e18421258dc68a2a4ccabe1647.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/assets/application.self-79a300d240bbf145c9af961805bc87f18e9f73bd1cda275895295c80d8552d3f.js?body=1" for ::1 at 2015-09-21 21:19:29 -0400
+
+
+Started GET "/" for ::1 at 2015-09-22 07:52:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (1.1ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 789ms (Views: 752.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.self-9bfce08483c0666536961c87ead592b404a362e3a2ff723749f4e4fdefce1bbe.css?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/vendor/modernizr.self-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.self-ee5396739ce46beb039f26ea629172a74143752d74f703c6c3b219fc52aecf73.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/style.self-035cbc64baab1122f29e1b527f3832b96ee0d681bc49eb89bfb4d43ceeb3185b.css?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/application.self-8d133098c471b84e746d1611d055e7ff23ede2a5a19d87a84ad7412be4c18aca.css?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-f8b56c707a79139807305a5f7efc2aaa0848f0c677abcc056496f507e0192b79.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-fbde7afb61e8ffd8ab9b717f0bed1e58cb9e0144a25cc773fea634d5554f62cd.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-d55abdcb0a7a29512be2f31f63d418cc8cc4505a0a3c71946d25484b0a0b3f4e.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-54610737b435a97590fcb176848c3c7a44c4d55d369894260fa7c28c97a70a23.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-c9ee29909e266373e5e814a73fc6ea062245ddd29466d35d232448f73350d78a.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-7aa743bf4660deb2fb2f601c112806a1703c430067531da3f41e4afffe19fee9.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-a50193f172f11e57b373c3001072ba2d6b34b857ab251e9ded30af5242855687.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-0a5271728699423f583dd5b3b8a11bfe0dc9fb5044446bcf3218ef8ca906a82d.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-dad8415355087cb21a16fa44bac20d602344d52de5aca9e588e3588fce5dd5a7.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-75bffd0c7f4f0d2992ab95f0cc6959282ebb5807da70123d40c01d76e230ec88.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-f8d30eb1717c874db26723f9e07901ec0a325d59263f1404ee83a616bb597ad2.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-95f01feb3e25e47b58b78da0021ae2fffafdee70846682067c180e0e10f7b095.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-834156796c253580629cfffc720bdc3d191b1e5a5a6ddbc1102ecd08c876516c.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-8911a7352cb577b6b7973b0734d57d2b624c79286558ffa36fcac0c29b2d0bee.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-105416f061562f07c6a0a8057d68282fdc1eeb5dc306713fcae6c9a53001fc55.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-9bf6791513d1b20e213bb1aee3df0bc17128c7e18421258dc68a2a4ccabe1647.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/application.self-79a300d240bbf145c9af961805bc87f18e9f73bd1cda275895295c80d8552d3f.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-22 07:52:11 -0400
+
+
+Started GET "/bills/1" for ::1 at 2015-09-22 07:52:20 -0400
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered bills/show.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 138ms (Views: 131.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/1" for ::1 at 2015-09-22 08:52:31 -0400
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBill Load (4.9ms)[0m  SELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered bills/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 271ms (Views: 264.6ms | ActiveRecord: 4.9ms)
+
+
+Started DELETE "/bills/1" for ::1 at 2015-09-22 08:52:34 -0400
+Processing by BillsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fJSKZXcBHrCDhyxhLSzmrFdkt2mYxKhKR5LqBJ/xYVPkcHnSN9Y92pNnpUxtTG0lS3tiOHvl6BogooKMk4EuTQ==", "id"=>"1"}
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (3.7ms)[0m  DELETE FROM "bills" WHERE "bills"."id" = ?  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:52:34 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 131ms (Views: 130.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:52:36 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 264ms (Views: 262.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:53:01 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"53TA04e2h+li622h8ApngJbksty41IxB8spk0I/c5Gp/kDNkx2Gkg3IL5IywauwJivtnjVv1zBGV+gxYg6yrdA==", "bill"=>{"bill_name"=>"Example 1", "payment_date"=>"tomorrow", "min_pay"=>"5", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 5], ["bill_name", "Example 1"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:53:01.929068"], ["updated_at", "2015-09-22 12:53:01.929068"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:53:01 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 211ms (Views: 210.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:53:04 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 169ms (Views: 168.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:53:20 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOy5C8c0zZTrUEvoRO6rQmNEbq2LMsiFqu5eGqoFTvg4CEq8h+Pu/vuwwsUEjiDLf1u7/GgTiNXN3jaSpnUB5g==", "bill"=>{"bill_name"=>"Example 2", "payment_date"=>"tomorrow", "min_pay"=>"150", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 150], ["bill_name", "Example 2"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:53:20.655281"], ["updated_at", "2015-09-22 12:53:20.655281"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:53:20 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:53:21 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 163ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:53:44 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/uuUreZyS2pk4kQvxYAPMOHRGVBYLZKWrkW6OUOrww1mD2capqVoAHQCzQKF4IS5/c7MAbsM0sbJddKxT9uMEw==", "bill"=>{"bill_name"=>"The House", "payment_date"=>"When the police come", "min_pay"=>"2000", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 2000], ["bill_name", "The House"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "When the police come"], ["created_at", "2015-09-22 12:53:44.074963"], ["updated_at", "2015-09-22 12:53:44.074963"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:53:44 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/paid_bills" for ::1 at 2015-09-22 08:53:46 -0400
+Processing by PaidBillsController#index as HTML
+  [1m[35mBill Load (0.1ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "t"]]
+  Rendered paid_bills/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:53:50 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:53:53 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 158ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:54:05 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5+axYnGDtV40OC5AC7vMUIhKPR0U/AdFPpC07xIbRt9/AkLVMVSWNCTYp21L20fZlFXoTPfdRxVZoNxnHmsJwQ==", "bill"=>{"bill_name"=>"Example 2", "payment_date"=>"tomorrow", "min_pay"=>"5", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 5], ["bill_name", "Example 2"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:54:05.945902"], ["updated_at", "2015-09-22 12:54:05.945902"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:54:05 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:54:08 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 146ms (Views: 145.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:54:19 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hOQOlmlB+ua/+vaAITEEcuc1a0A2fcmGd9Qxu1AUX/ccAP0hKZbZjK8af61hUY/7+yq+EdVcidYQ5FkzXGQQ6Q==", "bill"=>{"bill_name"=>"Example 3", "payment_date"=>"tomorrow", "min_pay"=>"5", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 5], ["bill_name", "Example 3"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:54:19.903989"], ["updated_at", "2015-09-22 12:54:19.903989"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:54:19 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 126ms (Views: 125.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:54:21 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 153ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:54:32 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n5K2eWwKgJkrhUK971kTlMLs4UfLZU8vcOAbU38SamcHdkXOLN2j8ztly5CvOZgd3vM0FihED38X0HPbc2IleQ==", "bill"=>{"bill_name"=>"Example 4 ", "payment_date"=>"tomorrow", "min_pay"=>"10", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 10], ["bill_name", "Example 4 "], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:54:32.744434"], ["updated_at", "2015-09-22 12:54:32.744434"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:54:32 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 120ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:54:42 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 155ms (Views: 153.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:54:55 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h6O+O+HViCBW3xzqBIX4kPhtl2Y153aDsQvBSl59pjIfR02MoQKrSkY/lcdE5XMZ5HJCN9bGNtPWO6nCUg3pLA==", "bill"=>{"bill_name"=>"Example 7 ", "payment_date"=>"tomorrow", "min_pay"=>"500", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 500], ["bill_name", "Example 7 "], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "tomorrow"], ["created_at", "2015-09-22 12:54:55.523286"], ["updated_at", "2015-09-22 12:54:55.523286"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:54:55 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:54:57 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 156ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:55:17 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EGGsTd47WOLicKskfoseLvd7HdQb1VM+ZseRnxWva/2IhV/6nux7iPKQIgk+65Wn62TIhfj0E24B9/kXGd8k4w==", "bill"=>{"bill_name"=>"The Car", "payment_date"=>"soon", "min_pay"=>"450", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 450], ["bill_name", "The Car"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "soon"], ["created_at", "2015-09-22 12:55:17.997499"], ["updated_at", "2015-09-22 12:55:17.997499"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:55:18 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 114ms (Views: 113.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:55:19 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 154ms (Views: 153.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:55:40 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L6KjugFUXX/hoE7VZeG9OVBiUtq5ikaY0fsKbrC8j6m3RlANQYN+FfFAx/glgTawTH2Hi1qrBsi2y2LmvMzAtw==", "bill"=>{"bill_name"=>"The Dog", "payment_date"=>"When he is hungry", "min_pay"=>"9", "link"=>"https://www.google.com/webhp?hl=en"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 9], ["bill_name", "The Dog"], ["link", "https://www.google.com/webhp?hl=en"], ["payment_date", "When he is hungry"], ["created_at", "2015-09-22 12:55:40.757729"], ["updated_at", "2015-09-22 12:55:40.757729"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:55:40 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:55:47 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 166ms (Views: 165.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:56:47 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ctvfyfvf7RnZzq/dN+gr2R8Wy8SfBoBrQemvB4GInK+SPyx+uwjOc8kuJvB3iKBQAwkelXwnwDsm2cePjfjTsQ==", "bill"=>{"bill_name"=>"The Cat", "payment_date"=>"Never, He can find food.", "min_pay"=>"0", "link"=>"http://static5.businessinsider.com/image/511d104a69bedd1f7c000012/grumpy-cat-definitely-did-not-make-100-million.jpg"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 0], ["bill_name", "The Cat"], ["link", "http://static5.businessinsider.com/image/511d104a69bedd1f7c000012/grumpy-cat-definitely-did-not-make-100-million.jpg"], ["payment_date", "Never, He can find food."], ["created_at", "2015-09-22 12:56:47.751827"], ["updated_at", "2015-09-22 12:56:47.751827"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:56:47 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 224ms (Views: 222.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:57:02 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 163ms (Views: 162.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 08:58:15 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+ep7lBfTI/J0sLNJJnRFF0fBPcemyxv7rpCmtiiklhnA1pZEIhv5dkyS+Bk+VqdQQDRpv26bD+JiioS1NLdRg==", "bill"=>{"bill_name"=>"The Children", "payment_date"=>"When they complain", "min_pay"=>"100,000,000,000", "link"=>"http://everydaylife.globalpost.com/DM-Resize/photos.demandstudios.com/getty/article/22/146/rbee_46.jpg?w=600&h=600&keep_ratio=1&webp=1"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 100], ["bill_name", "The Children"], ["link", "http://everydaylife.globalpost.com/DM-Resize/photos.demandstudios.com/getty/article/22/146/rbee_46.jpg?w=600&h=600&keep_ratio=1&webp=1"], ["payment_date", "When they complain"], ["created_at", "2015-09-22 12:58:15.450636"], ["updated_at", "2015-09-22 12:58:15.450636"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 08:58:15 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.4ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 265ms (Views: 264.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 08:58:19 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 165ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 09:01:29 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wjetEe9/Nfjza5N0SpXMupOyjL4sY7ZMdj3Afz+/75da016mr6gWkuOLGlkK9Uczj61Z789C9hwRDaj3M8+giQ==", "bill"=>{"bill_name"=>"The phone", "payment_date"=>"When your service cuts out", "min_pay"=>"100", "link"=>"http://jared.ws/wp-content/uploads/2014/03/cell-phone-providers-300x297.jpg"}, "commit"=>"Create Bill"}
+  [1m[35m (2.9ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 100], ["bill_name", "The phone"], ["link", "http://jared.ws/wp-content/uploads/2014/03/cell-phone-providers-300x297.jpg"], ["payment_date", "When your service cuts out"], ["created_at", "2015-09-22 13:01:29.242808"], ["updated_at", "2015-09-22 13:01:29.242808"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:01:29 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (3.0ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 275ms (Views: 271.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 09:01:35 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 166ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 09:01:50 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4tCn3vTDcsQ5juue/bIa+3fratDfHZJQVm+GD77Tze96NFRptBRRriluYrO90pFya/S/gTw80gAxX+6HsqOC8Q==", "bill"=>{"bill_name"=>"Hookers", "payment_date"=>"When ever", "min_pay"=>"50", "link"=>"https://www.ashleymadison.com/?lang=en_US&c=1&utm_source=google&utm_medium=cpc&utm_term=ashley%20madison&utm_content=e&network=g&campaignid=99324244=&adgroupid=4171677844&targetid=kwd-136338240&utm_campaign=Ashley+Madison+-+US+-+Brand&gclid=CLjoserUhsgCFQyPHwodNjMPMA"}, "commit"=>"Create Bill"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 50], ["bill_name", "Hookers"], ["link", "https://www.ashleymadison.com/?lang=en_US&c=1&utm_source=google&utm_medium=cpc&utm_term=ashley%20madison&utm_content=e&network=g&campaignid=99324244=&adgroupid=4171677844&targetid=kwd-136338240&utm_campaign=Ashley+Madison+-+US+-+Brand&gclid=CLjoserUhsgCFQyPHwodNjMPMA"], ["payment_date", "When ever"], ["created_at", "2015-09-22 13:01:50.461898"], ["updated_at", "2015-09-22 13:01:50.461898"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:01:50 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 09:01:57 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 163ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 09:02:53 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6eqLdJL4V1IWLudfwgLsPqlZnMcfBeAL2PwATvtmI8txDnjD0i90OAbObnKCYme3tUZJlvwkoFu/zGjG9xZs1Q==", "bill"=>{"bill_name"=>"Guns", "payment_date"=>"'merica", "min_pay"=>"9001", "link"=>"https://home.nra.org/"}, "commit"=>"Create Bill"}
+  [1m[35m (3.3ms)[0m  begin transaction
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 9001], ["bill_name", "Guns"], ["link", "https://home.nra.org/"], ["payment_date", "'merica"], ["created_at", "2015-09-22 13:02:53.275205"], ["updated_at", "2015-09-22 13:02:53.275205"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:02:53 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.3ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 281ms (Views: 279.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bills/new.%23%3CBill::ActiveRecord_Relation:0x007fab6a7e5c08%3E" for ::1 at 2015-09-22 09:02:56 -0400
+Processing by BillsController#new as 
+  Rendered bills/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 176ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bills" for ::1 at 2015-09-22 09:03:43 -0400
+Processing by BillsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fj8tx3o4T+1+tS6j/fGv2JK8WqUgSlEyuDybKE34bG3m295wOu9sh25Vp469kSRRjqOP9MNrEWLfDPOgQYgjcw==", "bill"=>{"bill_name"=>"Drugs", "payment_date"=>"When the Drug lord calls", "min_pay"=>"1,000", "link"=>"http://www.cvs.com/?WT.mc_id=PS_DB_09102012_AlwaysON&WT.srch=1&utm_source=Google&utm_medium=cpc&utm_term=cvs&utm_campaign=paid%2Bsearch&gclid=CJSvg_3ZisgCFZKAaQodxQYPfw"}, "commit"=>"Create Bill"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "bills" ("min_pay", "bill_name", "link", "payment_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["min_pay", 1], ["bill_name", "Drugs"], ["link", "http://www.cvs.com/?WT.mc_id=PS_DB_09102012_AlwaysON&WT.srch=1&utm_source=Google&utm_medium=cpc&utm_term=cvs&utm_campaign=paid%2Bsearch&gclid=CJSvg_3ZisgCFZKAaQodxQYPfw"], ["payment_date", "When the Drug lord calls"], ["created_at", "2015-09-22 13:03:43.113045"], ["updated_at", "2015-09-22 13:03:43.113045"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:03:43 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 213ms (Views: 212.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:04:19 -0400
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (3.7ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 242ms (Views: 236.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:04:23 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 116ms (Views: 114.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/bills/2" for ::1 at 2015-09-22 09:32:17 -0400
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mBill Load (5.0ms)[0m  SELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered bills/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 492ms (Views: 455.4ms | ActiveRecord: 5.0ms)
+
+
+Started PATCH "/bills/2" for ::1 at 2015-09-22 09:32:21 -0400
+Processing by BillsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0st2YaCuXTZ4orSO/wOF9mcygZFBE/lNeJa6uOtQT1BKL4XW4Hl+XGhCPaO/Yw5/ey1UwKIyuR0fptIw5yAATg==", "bill"=>{"paid"=>"true"}, "commit"=>"Pay Bill", "id"=>"2"}
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mUPDATE "bills" SET "paid" = ?, "updated_at" = ?, "paid_at" = ? WHERE "bills"."id" = ?[0m  [["paid", "t"], ["updated_at", "2015-09-22 13:32:21.568191"], ["paid_at", "-4712-01-01 00:00:00.000000"], ["id", 2]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:32:21 -0400
+Processing by BillsController#index as HTML
+  [1m[36mBill Load (0.1ms)[0m  [1mSELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?[0m  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 142ms (Views: 138.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/paid_bills" for ::1 at 2015-09-22 09:32:23 -0400
+Processing by PaidBillsController#index as HTML
+  [1m[35mBill Load (3.1ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "t"]]
+  Rendered paid_bills/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 237ms (Views: 232.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/bills/13" for ::1 at 2015-09-22 09:32:38 -0400
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBill Load (0.2ms)[0m  [1mSELECT  "bills".* FROM "bills" WHERE "bills"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered bills/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-22 09:33:25 -0400
+Processing by BillsController#index as HTML
+  [1m[35mBill Load (3.5ms)[0m  SELECT "bills".* FROM "bills" WHERE "bills"."paid" = ?  [["paid", "f"]]
+  Rendered bills/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 261ms (Views: 257.1ms | ActiveRecord: 3.5ms)
